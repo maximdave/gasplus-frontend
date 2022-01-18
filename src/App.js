@@ -1,8 +1,9 @@
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello gasplus frontend</h1>
+      <LandingPage/>
     </div>
   );
 }
