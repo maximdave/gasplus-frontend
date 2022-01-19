@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  font-size: 24px;
+}
+
+.nav-section1 {
+  width: 10%;
+}
+.nav-section2 {
+  width: 60%;
+}
+.nav-section3 {
+  width: 30%;
+}

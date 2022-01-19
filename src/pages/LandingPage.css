@@ -1,0 +1,100 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/warner-ptudKzrajps-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.header-text {
+  font-size: 60px;
+  font-weight: 800;
+  color: #ffffff;
+  width: 90%;
+}
+.header-text-wrapper {
+  margin-top: 10% !important;
+}
+.body-text {
+  margin-top: 2%;
+  font-size: 18px;
+  width: 60%;
+  color: #ffffff;
+}
+.icon-bg {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f47930;
+}
+.contact-section-div {
+  margin: 80px auto 40px auto;
+}
+.contact-card {
+  margin-left: 20px;
+}
+.contact-card h3 {
+  color: #171725;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.contact-card p {
+  line-height: 1;
+  margin: 4px auto;
+  color: #a5a5a5;
+}
+.primary-text {
+  color: #f47930 !important;
+}
+.services {
+  margin-top: 80px;
+}
+.service-text {
+  width: 60%;
+  margin: auto;
+  color: #171725;
+}
+.about-gasplus {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/scott-blake-x-ghf9LjrVg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.input-error {
+  color: red;
+}
+.conditions {
+  background-color: #f47930;
+}
+.footer-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 376px) {
+  .header-text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+  }
+  .body-text {
+    margin-top: 2%;
+    font-size: 18px;
+    width: 100%;
+    color: #ffffff;
+  }
+  .landing-page {
+    width: 100vw;
+    height: 80vh;
+    background: url("../assets/warner-ptudKzrajps-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+}
