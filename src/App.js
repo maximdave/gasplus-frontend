@@ -1,10 +1,14 @@
 import LandingPage from "./pages/LandingPage";
-
+import LoginPage from "./pages/LoginPage";
+import {Route, Switch} from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-      <LandingPage/>
-    </div>
+      <>
+        <Switch>
+          <Route exact path="/" component={LandingPage}/>
+          <Route path= "/login" component={LoginPage}/>
+        </Switch>
+      </>
   );
 }
 

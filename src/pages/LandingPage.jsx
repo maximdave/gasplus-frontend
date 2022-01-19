@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { Container } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import { BsEnvelope } from "react-icons/bs";
+
 import "./LandingPage.css";
 const LandingPage = () => {
   const About = [
@@ -51,7 +52,7 @@ const LandingPage = () => {
       <Container fluid className="landing-page">
         <Navbar />
 
-        <div className="mx-4 px-1 header-text-wrapper">
+        <div className="mx-lg-4 mx-sm-2 px-1 header-text-wrapper">
           <h3 className="header-text">
             Best provider of onshore & offshore oil and gas infrastructure/asset
             development!
@@ -69,32 +70,35 @@ const LandingPage = () => {
           </div>
         </div>
       </Container>
-      <Container fluid className="px-5">
-        <div className="row contact-section-div">
-          <div className="col-md-3">
-            <div className="d-flex align-items-center">
-              <div class="icon-bg">
-                <BsEnvelope color="#ffffff" size={"24"} />
+      <Container fluid className="px-lg-5">
+        <div className="row d-flex w-100 contact-section-div bg-primary">
+          <div className="col-sm-6 bg-danger">
+            <div className="col-xs-12">
+              <div className="d-flex align-items-center">
+                <div className="icon-bg">
+                  <BsEnvelope color="#ffffff" size={"24"} />
+                </div>
+                <div className="contact-card">
+                  <h3>Contact Us</h3>
+                  <p>Email: Promina@7oroof.com </p>
+                  <p>Phone: 55 654 541 17</p>
+                </div>
               </div>
-              <div className="contact-card">
-                <h3>Contact Us</h3>
-                <p>Email: Promina@7oroof.com </p>
-                <p>Phone: 55 654 541 17</p>
+            </div>
+            <div className="col-sm-12">
+              <div className="d-flex align-items-center w-100">
+                <div className="icon-bg w-auto">
+                  <BsEnvelope color="#ffffff" size={"24"} />
+                </div>
+                <div className="contact-card ml-3">
+                  <h3>Our Location</h3>
+                  <p>Ibukun house, Block 105 Baderinwa Alabi St</p>
+                  <p>Lekki Phase 1 106104, Lagos, Nigeria</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="d-flex align-items-center w-100">
-              <div className="icon-bg w-auto">
-                <BsEnvelope color="#ffffff" size={"24"} />
-              </div>
-              <div className="contact-card">
-                <h3>Our Location</h3>
-                <p>Ibukun house, Block 105 Baderinwa Alabi St</p>
-                <p>Lekki Phase 1 106104, Lagos, Nigeria</p>
-              </div>
-            </div>
-          </div>
+          <div className="col-xs-6">dsfa</div>
         </div>
       </Container>
 
@@ -127,19 +131,23 @@ const LandingPage = () => {
 
       <Container fluid className="mt-5">
         <h3 className="text-center primary-text">Our Clients</h3>
+        <div className="row">
+          <div className="col-xs-3"></div>
+          <div className="col-xs-3"></div>
+          <div className="col-xs-3"></div>
+          <div className="col-xs-3"></div>
+        </div>
       </Container>
 
-      <Container fluid>
-        <div className="about-gasplus px-3 text-white">
-          <div className="row">
-            <div className="col-md-8">
-              <h3>We’ve Got The Best Deal Out There.</h3>
-              {About.map((el) => (
-                <p>{el}</p>
-              ))}
-            </div>
-            <div className="col-md-4"></div>
+      <Container fluid className="bg-primary about-gasplus">
+        <div className="row px-3 text-white">
+          <div className="col-md-8">
+            <h3>We’ve Got The Best Deal Out There.</h3>
+            {About.map((el, index) => (
+              <p key={index}>{el}</p>
+            ))}
           </div>
+          <div className="col-md-4"></div>
         </div>
       </Container>
 
@@ -171,7 +179,9 @@ const LandingPage = () => {
             <button>Send</button>
           </div>
         </div>
-        <div class="w-100 conditions">
+      </Container>
+      <Container fluid className="w-100 conditions">
+        <div className="">
           <p className="text-center text-white">
             © 2022 Gasplus LTD - GPI. All rights reserved.
           </p>

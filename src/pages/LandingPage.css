@@ -63,13 +63,38 @@
   background-image: url("../assets/scott-blake-x-ghf9LjrVg-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: red;
 }
-
+.input-error {
+  color: red;
+}
 .conditions {
   background-color: #f47930;
 }
 .footer-section {
   width: 100%;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 376px) {
+  .header-text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+  }
+  .body-text {
+    margin-top: 2%;
+    font-size: 18px;
+    width: 100%;
+    color: #ffffff;
+  }
+  .landing-page {
+    width: 100vw;
+    height: 80vh;
+    background: url("../assets/warner-ptudKzrajps-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
 }
